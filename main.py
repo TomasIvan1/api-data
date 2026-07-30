@@ -1,5 +1,6 @@
 import csv
 from collections import defaultdict
+import json
 
 total = 0.0
 product_sales = defaultdict(float)
@@ -17,3 +18,13 @@ top = sorted(product_sales.items(), key=lambda item: item[1], reverse=True)[:3]
 print("Top 3 products:")
 for p in top:
     print(p[0])
+
+with open("config.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+config["threshold"] = 999
+
+with open("config.json", "w", encoding="utf-8") as f:
+    json.dump(config, f, indent=2)
+
+print("\nSuccessfully done JSON.")
