@@ -36,3 +36,16 @@ print(data["stargazers_count"], "stars")
 
 with open("snapshot.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2)
+
+with open("sales.csv", "r", encoding="utf-8") as infile, \
+     open("report.csv", "w", encoding="utf-8", newline="") as outfile:
+    
+    reader = csv.DictReader(infile)
+    fieldnames = reader.fieldnames + ["total_price"]
+
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+    writer.writeheader()
+    
+    for row in reader:
+        row["total_price"] = float(row["unit_price"])*int(row["units"])
+        writer.writerow(row)

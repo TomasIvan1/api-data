@@ -83,11 +83,11 @@
   "has_wiki": false,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 35057,
+  "forks_count": 35058,
   "mirror_url": null,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 9494,
+  "open_issues_count": 9496,
   "license": {
     "key": "other",
     "name": "Other",
@@ -102,8 +102,8 @@
   "pull_request_creation_policy": "all",
   "topics": [],
   "visibility": "public",
-  "forks": 35057,
-  "open_issues": 9494,
+  "forks": 35058,
+  "open_issues": 9496,
   "watchers": 73968,
   "default_branch": "main",
   "temp_clone_token": null,
@@ -129,6 +129,6 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "network_count": 35057,
+  "network_count": 35058,
   "subscribers_count": 1608
 }
