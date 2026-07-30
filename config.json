@@ -1,0 +1,10 @@
+{
+  "report_title": "Daily Summary",
+  "recipient": "team@example.com",
+  "threshold": 80,
+  "enabled": true,
+  "regions": [
+    "EU-West",
+    "EU-East"
+  ]
+}
